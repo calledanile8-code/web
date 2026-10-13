@@ -1,0 +1,92 @@
+/* VARIABLES GLOBALES */
+:root {
+ --primary-color: #1e3c72;
+ --secondary-color: #2a5298;
+ --accent-color: #00d2ff;
+ --dark-bg: #0d1b2a;
+}
+/* TIPOGRAFÍA Y ESTILOS BASE */
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: #333333;
+}
+/* BRANDING EN NAVBAR */
+.brand-custom {
+ font-weight: 700;
+ letter-spacing: 1px;
+ color: var(--accent-color) !important;
+}
+/* CABECERA HERO SECTION */
+.hero-section {
+ background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+ min-height: 55vh;
+ padding: 60px 0;
+}
+/* ENCABEZADOS DE PÁGINAS SECUNDARIAS */
+.page-header {
+ background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+ padding: 40px 0;
+ border-bottom: 3px solid var(--accent-color);
+}
+/* BOTÓN PERSONALIZADO CON ANIMACIÓN */
+.btn-custom {
+ background-color: var(--accent-color);
+ border: none;
+ color: #001f3f;
+ font-weight: 700;
+ padding: 10px 24px;
+ transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-custom:hover {
+ background-color: #00b4d8;
+ color: #ffffff;
+ transform: translateY(-3px);
+ box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+}
+/* TARJETAS DE SERVICIO (HOVER Y SOMBRAS DINÁMICAS) */
+.card-custom {
+ background: #ffffff;
+ border-radius: 12px;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-custom:hover {
+ transform: translateY(-8px);
+ box-shadow: 0 12px 24px rgba(30, 60, 114, 0.18);
+}
+/* SECCIÓN DE MÉTRICAS */
+.bg-dark-blue {
+ background-color: var(--dark-bg);
+}
+.metric-box {
+ border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.row .col-6:last-child .metric-box,
+.row .col-md-3:last-child .metric-box {
+ border-right: none;
+}
+/* CONTROLES DE FORMULARIO ESTILIZADOS */
+.form-card {
+ border-radius: 15px;
+}
+.form-control-custom {
+ border: 2px solid #e2e8f0;
+ border-radius: 8px;
+ padding: 10px 14px;
+ transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.form-control-custom:focus {
+ border-color: var(--secondary-color);
+ box-shadow: 0 0 0 0.25rem rgba(42, 82, 152, 0.2);
+}
+/* FOOTER UNIFICADO */
+.footer-custom {
+ background: linear-gradient(135deg, #0d1b2a 0%, #1e3c72 100%);
+ border-top: 3px solid var(--accent-color);
+}
+.social-links a {
+ transition: opacity 0.2s ease;
+}
+.social-links a:hover {
+ opacity: 0.7;
+}
